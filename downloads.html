@@ -2,27 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Download Source Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads | Power Automate Training Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 50px auto; padding: 20px; text-align: center; background-color: #f4f7f6; }
-        nav { margin-bottom: 30px; }
-        nav a { color: #2c3e50; margin: 0 10px; text-decoration: none; font-weight: bold; }
-        .download-box { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .download-link { display: block; margin: 15px 0; padding: 15px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .logo-placeholder { background: linear-gradient(135deg, #0078d4, #005a9e); }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
+    <header>
+        <!-- Top Nav Bar -->
+        <div class="bg-blue-900 text-white py-2 px-6 text-right text-sm font-medium">
+            <a href="downloads.html" class="hover:text-blue-200 px-3">Downloads</a>
+            <span class="text-blue-700">|</span>
+            <a href="#" class="hover:text-blue-200 px-3">Free Demo</a>
+            <span class="text-blue-700">|</span>
+            <a href="training-certifications.html" class="hover:text-blue-200 px-3">Training Centre</a>
+        </div>
+        
+        <!-- Bottom Nav Bar -->
+        <div class="bg-white py-4 px-6 flex items-center justify-between border-b shadow-sm">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 logo-placeholder rounded flex items-center justify-center text-white font-bold text-lg">PA</div>
+                <span class="font-bold text-xl tracking-tight text-gray-900">Power Automate</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="#" class="hover:text-blue-600">About</a>
+                <a href="#" class="hover:text-blue-600">Support</a>
+                <a href="#" class="hover:text-blue-600">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <nav>
-        <a href="https://adamrayliffe.github.io/power-automation/">Home</a>
-    </nav>
+    <main class="max-w-4xl mx-auto py-16 px-6">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-6">Resource Download Hub</h1>
+        <p class="text-lg text-gray-600 mb-12">Access official source documentation and automation templates to assist with your training modules.</p>
+        
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 divide-y divide-gray-100">
+            <!-- Resource Item 1 -->
+            <div class="p-6 flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold text-gray-900">Power Automate to Cloud Radial</h3>
+                    <p class="text-sm text-gray-500">Official integration guide and source documentation (.docx)</p>
+                </div>
+                <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md font-semibold text-sm hover:bg-blue-700 transition">Download</a>
+            </div>
+            
+            <!-- Resource Item 2 -->
+            <div class="p-6 flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold text-gray-900">Power Automate to Microsoft Forms</h3>
+                    <p class="text-sm text-gray-500">Integration source templates for form automation (.docx)</p>
+                </div>
+                <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md font-semibold text-sm hover:bg-blue-700 transition">Download</a>
+            </div>
+        </div>
+    </main>
 
-    <h1>Download Source Documents</h1>
-    <div class="download-box">
-        <a href="Power Automate - to - Cloud Radial.docx" class="download-link" download>Download: Power Automate - to - Cloud Radial.docx</a>
-        <a href="Power Automate - to - Microsoft Forms.docx" class="download-link" download>Download: Power Automate - to - Microsoft Forms.docx</a>
-    </div>
+    <footer class="text-center py-10 text-gray-500 text-sm border-t">
+        &copy; 2026 Power Automate Training Academy. All rights reserved.
+    </footer>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-#
+# Power Automate Training Platform
 
 Welcome to the Power Automate Training Academy repository! This platform is dedicated to upskilling professionals in Microsoft Power Automate, ranging from foundational automation to complex enterprise lifecycle management. 
 

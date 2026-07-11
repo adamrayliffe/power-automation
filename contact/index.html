@@ -11,7 +11,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-   <header>
+    <header>
         <!-- Top Nav Bar -->
         <div class="bg-blue-900 text-white py-2 px-6 text-right text-sm font-medium">
             <a href=".././downloads/" class="hover:text-blue-200 px-3">Downloads</a>
@@ -32,7 +32,7 @@
                 <a href=".././about/" class="hover:text-blue-600">About</a>
                 <a href=".././support/" class="hover:text-blue-600">Support</a>
                 <a href=".././FAQs/" class="hover:text-blue-600">FAQs</a>
-                <a href=".././contact/" class="hover:text-blue-600">Contact</a>
+                <a href=".././contact/" class="text-blue-600 border-b-2 border-blue-600 pb-1">Contact</a>
             </nav>
         </div>
     </header>
@@ -41,16 +41,30 @@
         <h1 class="text-4xl font-extrabold text-gray-900 mb-8">Contact Us</h1>
         
         <div class="grid md:grid-cols-2 gap-12">
-            <!-- Contact Form -->
+            <!-- Professional Contact Form -->
             <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a message</h2>
-                <form action="https://formsubmit.co/adamryanayliffe@gmail.com" method="POST">
+                <form action="https://formsubmit.co/adamryanayliffe@gmail.com" method="POST" class="space-y-4">
+                    <!-- FormSubmit Configuration -->
                     <input type="hidden" name="_subject" value="New submission! Power Automate Academy">
                     <input type="hidden" name="_template" value="table">
-                     <input type="text" name="name" placeholder="Enter Your Name Here" required>
-                     <textarea name="message" placeholder="Details of your problem"></textarea>
-                     <input type="email" name="email" placeholder="Enter Your Email Address Here" required>
-                    <button type="submit">Submit Form</button>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" name="name" required placeholder="John Doe" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" name="email" required placeholder="john@example.com" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" rows="4" required placeholder="How can we help you today?" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200 shadow-sm">Send Message</button>
                 </form>
             </div>
 
